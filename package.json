@@ -1,0 +1,25 @@
+{
+  "name": "blog-website",
+  "version": "1.0.0",
+  "description": "Blogging Website",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeDevcoder/blog-website.git"
+  },
+  "author": "Jibril Asif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodeDevcoder/blog-website/issues"
+  },
+  "homepage": "https://github.com/nodeDevcoder/blog-website#readme"
+}
