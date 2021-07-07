@@ -8,6 +8,19 @@
 #trending-dropdown {
     /* width: fit-content; */
 }
+#trending:hover + #trending-dropdown, #trending-dropdown:hover, #topics:hover + #topics-dropdown, #topics-dropdown:hover {
+    display: flex;
+}
+
+.navbar-dropdown {}
+
+.navbar-dropdown > .navbar-item {
+    flex: 1;
+}
+
+.navbar-dropdown > .navbar-item:hover {
+    color: #485fc7 !important;
+}
 
 #signup-btn, #login-btn {
     font-family: 'Encode Sans SC', sans-serif;
@@ -17,5 +30,9 @@
 @media screen and (max-width: 1023px) {
     #trending-dropdown, #topics-dropdown {
         display: none;
+    }
+
+    #trending:hover + #trending-dropdown, #trending-dropdown:hover {
+        display: flex;
     }
 }
