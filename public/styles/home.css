@@ -1,0 +1,21 @@
+
+
+
+.navbar-item {
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+#trending-dropdown {
+    /* width: fit-content; */
+}
+
+#signup-btn, #login-btn {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+    #trending-dropdown, #topics-dropdown {
+        display: none;
+    }
+}
