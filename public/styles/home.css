@@ -1,6 +1,5 @@
 
 
-
 .navbar-item {
     font-family: 'Encode Sans SC', sans-serif;
 }
@@ -12,10 +11,16 @@
     display: flex;
 }
 
-.navbar-dropdown {}
+#trending:hover + #trending-dropdown, #trending-dropdown:hover {  
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;  
+}
 
-.navbar-dropdown > .navbar-item {
-    flex: 1;
+#topics.navbar-dropdown > .navbar-item {
+  display: flex;
+  flex: 0;
+  min-width: calc(33% - 1em);
 }
 
 .navbar-dropdown > .navbar-item:hover {
@@ -34,5 +39,9 @@
 
     #trending:hover + #trending-dropdown, #trending-dropdown:hover {
         display: flex;
+    }
+
+    #trending:hover + #trending-dropdown, #trending-dropdown:hover {
+        width: 100vw;  
     }
 }
