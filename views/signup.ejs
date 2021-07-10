@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/dist/mc-calendar.min.css" />
+        <link rel="stylesheet" href="/styles/signup.css">
+        <title>Sign Up to <%= webname %></title>
+    </head>
+
+    <body>
+
+        <%- include ("partials/auth.ejs") %>
+    
+    <section class="body">
+        <div class="box">
+            <form action="" id="signup-form">
+                <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input is-primary" type="email" placeholder="e.g. alex@example.com">
+                </div>
+                </div>
+                
+                <div class="field user">
+                    <label class="label">Username</label>
+                    <div class="control">
+                        <input class="input is-primary" type="text" placeholder="UsErNamE">
+                    </div>
+                </div>
+                
+                <div class="field user">
+                    <label class="label">Password</label>
+                    <div class="control">
+                        <input class="input is-primary" type="password" placeholder="********">
+                    </div>
+                </div>
+
+                <div class="field birthday">
+                    <label class="label">Birthday</label>
+                    <div class="control">
+                        <input class="input is-primary" id="example" type="text">
+                    </div>
+                </div>
+
+                <div id="btn-holder">
+                    <button id="signup-btn" class="button is-primary is-rounded">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+        <script src="/dist/mc-calendar.min.js"></script>
+        <script src="/scripts/nav.js"></script>
+    </body>
+</html>

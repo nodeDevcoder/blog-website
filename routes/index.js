@@ -14,17 +14,10 @@ router.route('/signup')
     .get((req, res) => {
         res.render('signup')
     })
-    .post((req, res) => {
+    .post(async (req, res) => {
         const user = new User({ email: req.body.email, username: req.body.username });
         const reg = await User.register(user, req.body.password);
         res.send(reg);
     })
-
-
-router.get('/fakeUser', async (req, res) => {
-    const user = new User({ email: 'jibrilasif@gmail.com', username: 'Jibril' });
-    const reg = await User.register(user, 'asif');
-    res.send(reg);
-})
 
 module.exports = router;

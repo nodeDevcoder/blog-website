@@ -1,4 +1,7 @@
 
+.navbar-brand, #brand-img {
+    cursor: default !important;
+}
 
 .navbar-item {
     font-family: 'Encode Sans SC', sans-serif;

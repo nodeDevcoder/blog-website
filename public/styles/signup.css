@@ -1,0 +1,63 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar-end > .navbar-item {
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+section.body {
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.box {
+    width: 50%;
+    margin-left: 25%;
+}
+
+form#signup-form {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: bold;
+}
+
+.field.user {
+    width: 49%;
+    display: inline-block;
+}
+
+input.input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#btn-holder {
+    width: 100%;
+    text-align: center;
+}
+
+#signup-btn {
+    font-family: 'Encode Sans SC', sans-serif;
+    width: 20%;
+    min-width: 91px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .box {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .box {
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    #signup-btn {
+        width: 30%;
+    }
+}
