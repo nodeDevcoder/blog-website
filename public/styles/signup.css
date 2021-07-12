@@ -1,20 +1,35 @@
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .navbar-end > .navbar-item {
     font-family: 'Encode Sans SC', sans-serif;
 }
 
 section.body {
     width: 100%;
-    margin-top: 20vh;
+    margin-top: 10vh;
+}
+
+#signup-header {
+    width: 100%;
+    text-align: center;
+}
+
+#signup-header > h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 1vh;
+}
+
+#signup-header > h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .box {
     width: 50%;
     margin-left: 25%;
+    margin-top: 5vh;
 }
 
 form#signup-form {
@@ -23,8 +38,25 @@ form#signup-form {
 }
 
 .field.user {
-    width: 49%;
+    width: 48%;
     display: inline-block;
+}
+
+.field.half {
+    width: 48%;
+    display: inline-block;
+}
+
+#gender {
+    margin-left: 2%;
+}
+
+p.help {
+    font-family: 'Raleway', sans-serif;
+}
+
+label.radio {
+    font-family: 'Raleway', sans-serif;
 }
 
 input.input {

@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/dist/mc-calendar.min.css" />
+        <link rel="stylesheet" href="/assets/MCDatepicker-master/dist/mc-calendar.min.css">
         <link rel="stylesheet" href="/styles/signup.css">
         <title>Sign Up to <%= webname %></title>
     </head>
@@ -20,13 +20,18 @@
         <%- include ("partials/auth.ejs") %>
     
     <section class="body">
+        <div id="signup-header">
+            <h1>Sign Up to <%= webname %>&nbsp;<sup><span class="tag is-primary is-light is-medium">It's free!</span></sup></h1>
+            <h3>It's quick, simple, and easy!</h3>
+        </div>
         <div class="box">
             <form action="" id="signup-form">
                 <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                    <input class="input is-primary" type="email" placeholder="e.g. alex@example.com">
-                </div>
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input is-primary" type="email" placeholder="e.g. alex@example.com">
+                    </div>
+                    <p class="help">Will not be displayed publicly unless you want it to</p>
                 </div>
                 
                 <div class="field user">
@@ -39,14 +44,32 @@
                 <div class="field user">
                     <label class="label">Password</label>
                     <div class="control">
-                        <input class="input is-primary" type="password" placeholder="********">
+                        <input class="input is-primary" type="password" placeholder="8 - 20 chars long">
                     </div>
                 </div>
 
-                <div class="field birthday">
+                <div class="field half">
                     <label class="label">Birthday</label>
                     <div class="control">
-                        <input class="input is-primary" id="example" type="text">
+                        <input class="input is-primary" id="bday" type="text">
+                    </div>
+                </div>
+
+                <div class="field half" id="gender">
+                    <label class="label">Gender</label>
+                    <div class="control">
+                        <label class="radio" id="male">
+                            Male
+                            <input type="radio" name="gender" value="male">
+                        </label>
+                        <label class="radio" id="female">
+                            Female
+                            <input type="radio" name="gender" value="female">
+                        </label>
+                        <label class="radio" id="other">
+                            Other
+                            <input type="radio" name="gender" value="other">
+                        </label>
                     </div>
                 </div>
 
@@ -57,7 +80,8 @@
         </div>
     </section>
 
-        <script src="/dist/mc-calendar.min.js"></script>
+        <script src="/assets/MCDatepicker-master/dist/mc-calendar.min.js"></script>
+        <script src="/scripts/signup.js"></script>
         <script src="/scripts/nav.js"></script>
     </body>
 </html>
