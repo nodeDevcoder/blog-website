@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/assets/MCDatepicker-master/dist/mc-calendar.min.css">
+        <link rel="stylesheet" href="/assets/css/all.css">
         <link rel="stylesheet" href="/styles/signup.css">
         <title>Sign Up to <%= webname %></title>
     </head>
@@ -29,7 +30,12 @@
                 <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                        <input class="input is-primary" type="email" placeholder="e.g. alex@example.com">
+                        <p class="control has-icons-left">
+                            <input id="email-input" class="input is-primary" name="email" type="input" placeholder="e.g. alex@example.com">
+                            <span class="icon is-small is-left">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                        </p>
                     </div>
                     <p class="help">Will not be displayed publicly unless you want it to</p>
                 </div>
@@ -37,42 +43,82 @@
                 <div class="field user">
                     <label class="label">Username</label>
                     <div class="control">
-                        <input class="input is-primary" type="text" placeholder="UsErNamE">
+                        <p class="control has-icons-left">
+                            <input id="username-input" class="input is-primary" name="username" type="text" placeholder="3 - 20 chars long">
+                            <span class="icon is-small is-left">
+                                <i class="far fa-user"></i>
+                            </span>
+                        </p>
                     </div>
                 </div>
                 
                 <div class="field user">
                     <label class="label">Password</label>
                     <div class="control">
-                        <input class="input is-primary" type="password" placeholder="8 - 20 chars long">
+                        <p class="control has-icons-left has-icons-right">
+                            <input id="password-input" class="input is-primary" name="password" type="password" placeholder="8 - 20 chars long">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-unlock-alt"></i>
+                            </span>
+                            <span class="icon is-small is-right" id="show-pass">
+                                <i class="far fa-eye-slash"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Confirm Password</label>
+                    <div class="control">
+                        <p class="control has-icons-left has-icons-right">
+                        <input id="confirm-password" class="input is-primary" name="confirmPass" type="password" placeholder="Make sure you remember it!">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <span class="icon is-small is-right" id="show-conf-pass">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                        </p>
                     </div>
                 </div>
 
                 <div class="field half">
                     <label class="label">Birthday</label>
                     <div class="control">
-                        <input class="input is-primary" id="bday" type="text">
+                        <p class="control has-icons-left">
+                            <input id="birthday-input" class="input is-primary" name="birthday" id="bday" type="text" placeholder="e.g. Jan 1, 2000">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-gift"></i>
+                            </span>
+                        </p>
                     </div>
                 </div>
 
                 <div class="field half" id="gender">
                     <label class="label">Gender</label>
                     <div class="control">
-                        <label class="radio" id="male">
-                            Male
-                            <input type="radio" name="gender" value="male">
-                        </label>
-                        <label class="radio" id="female">
-                            Female
-                            <input type="radio" name="gender" value="female">
-                        </label>
-                        <label class="radio" id="other">
-                            Other
-                            <input type="radio" name="gender" value="other">
-                        </label>
+                        <p class="control">
+                            <label class="radio" id="Male">
+                                Male
+                                <input type="radio" name="gender" value="male" required>
+                                <i class="fas fa-male"></i>
+                            </label>
+                            <label class="radio" id="Female">
+                                Female
+                                <input type="radio" name="gender" value="female" required>
+                                <i class="fas fa-female"></i>
+                            </label>
+                            <label class="radio" id="other">
+                                Other
+                                <input type="radio" name="gender" value="Other" required>
+                                <i class="fas fa-neuter"></i>
+                            </label>
+                        </p>    
                     </div>
                 </div>
-
+                <div class="field">
+                    <label><input type="checkbox" name="tc" id="terms"> &nbsp; I agree to the <a href="">Terms and Conditions</a></label>
+                </div>
                 <div id="btn-holder">
                     <button id="signup-btn" class="button is-primary is-rounded">Sign Up</button>
                 </div>

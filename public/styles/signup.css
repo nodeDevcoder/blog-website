@@ -1,6 +1,24 @@
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}  /* Google Input Override! */
+
 .navbar-end > .navbar-item {
     font-family: 'Encode Sans SC', sans-serif;
+}
+
+#nav-img {
+    /* width: 60px;
+    height: 60px; */
 }
 
 section.body {
@@ -49,6 +67,41 @@ form#signup-form {
 
 #gender {
     margin-left: 2%;
+}
+
+input.input:focus + span.icon {
+    color: rgb(123, 201, 250) !important;
+}
+
+span.icon.is-small.is-right {
+    pointer-events: all;
+    cursor: pointer;
+    color: lightgreen;
+}
+
+span.icon.is-small.is-right:hover {
+    cursor: pointer !important;
+}
+
+input.input:focus ~ span.icon.is-small.is-right {
+    color: lightslategray;
+}
+
+input[name="gender"] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+input[name="gender"] + i {
+    cursor: pointer;
+    color: lightgray;
+}
+  
+input[name="gender"]:checked + i {
+    color: rgb(123, 201, 250);
+    font-size: 20px;
 }
 
 p.help {

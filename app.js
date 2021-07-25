@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.use((req, res, next) => {
-    res.locals.webname = "Blog Website",
+    res.locals.webname = "Diary Bin",
     next();
 });
 
